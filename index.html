@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pierre Curty – Développeur logiciel &amp; systèmes d'intégration</title>
+    <meta name="description" content="CV de Pierre Curty, développeur junior C++ / Python et systèmes embarqués, en recherche d'alternance Bac+3 sur la région lyonnaise.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="terminal">
+        <div class="barre-titre" aria-hidden="true">
+            <span class="point"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+            <span class="barre-titre-texte">pierre@cv: ~</span>
+        </div>
+
+        <main class="ecran">
+            <header class="bloc">
+                <p class="invite"><span class="utilisateur">pierre@cv</span>:<span class="chemin">~</span>$ <span id="commande">whoami</span></p>
+                <h1 class="apparition">Pierre Curty</h1>
+                <p class="poste apparition">Développeur logiciel &amp; systèmes d'intégration</p>
+                <p class="statut apparition">Recherche une alternance (Bac+3) en développement informatique sur la région lyonnaise.</p>
+                <p class="telechargement apparition"><a href="CV-Curty-Pierre.pdf" download>Télécharger le CV (PDF)</a></p>
+            </header>
+
+            <section class="bloc" aria-labelledby="a-propos">
+                <h2 id="a-propos" class="invite"><span class="utilisateur">pierre@cv</span>:<span class="chemin">~</span>$ cat a-propos.txt</h2>
+                <p>Développeur junior orienté logique et architecture système, en BTS CIEL. J'aime concevoir des projets où le logiciel rencontre le matériel : capteurs, entrées/sorties, bases de données et événements en temps réel.</p>
+                <p>Mon stage chez Défiez le Cube m'a permis de développer l'écosystème technique d'une salle interactive. Je poursuis mon apprentissage sur des langages orientés performance (C++, Rust) et je cherche une entreprise qui m'accompagnera pour l'alternance.</p>
+                <p>Mon expérience en restauration, jusqu'au poste de formateur, m'a appris à tenir le rythme lors des pics d'activité, à transmettre des standards précis et à rester efficace sous pression.</p>
+            </section>
+
+            <section class="bloc" aria-labelledby="competences">
+                <h2 id="competences" class="invite"><span class="utilisateur">pierre@cv</span>:<span class="chemin">~</span>$ ls competences/</h2>
+                <dl class="details">
+                    <dt>langages</dt>
+                    <dd>C++ (POO, automates) · Python (logique métier, Pygame, traitement d'image) · Rust (notions bas niveau)</dd>
+                    <dt>bibliothèques</dt>
+                    <dd>Pygame · SFML</dd>
+                    <dt>données</dt>
+                    <dd>MySQL</dd>
+                    <dt>outils</dt>
+                    <dd>Git / GitHub · Linux · WSL · Visual Studio Code · Autodesk Fusion 360</dd>
+                    <dt>langues</dt>
+                    <dd>Anglais technique (documentations, datasheets)</dd>
+                </dl>
+            </section>
+
+            <section class="bloc" aria-labelledby="experience">
+                <h2 id="experience" class="invite"><span class="utilisateur">pierre@cv</span>:<span class="chemin">~</span>$ git log --experience</h2>
+
+                <article class="entree">
+                    <h3>Stage développement / intégration <span class="lieu">Défiez le Cube, Avignon</span></h3>
+                    <p class="periode">Juillet 2024 · 6 semaines</p>
+                    <ul>
+                        <li>Développement d'un module de jeu interactif (« 1, 2, 3 Soleil ») avec analyse vidéo en temps réel.</li>
+                        <li>Scriptage en Python de contrôleurs matériels (entrées/sorties, capteurs).</li>
+                        <li>Interfaçage avec une base de données MySQL et gestion d'événements en temps réel.</li>
+                        <li>Intégration de la détection de mouvements par caméras 360° et suivi technique avec l'équipe (programmation, électronique, tests).</li>
+                    </ul>
+                </article>
+
+                <article class="entree">
+                    <h3>Formateur &amp; équipier polyvalent <span class="lieu">McDonald's, Realpanier</span></h3>
+                    <p class="periode">2025 – 2026 · emploi étudiant</p>
+                    <ul>
+                        <li>Service en flux tendu et gestion du stress lors des pics d'activité.</li>
+                        <li>Formation des nouveaux collaborateurs aux standards de l'entreprise.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="bloc" aria-labelledby="projets">
+                <h2 id="projets" class="invite"><span class="utilisateur">pierre@cv</span>:<span class="chemin">~</span>$ ls projets/</h2>
+
+                <article class="entree">
+                    <h3>Tetramino <span class="lieu">projet BTS CIEL</span></h3>
+                    <p class="periode">2026 · Python, Pygame</p>
+                    <ul>
+                        <li>Conception et développement complet d'un jeu : boucle de rendu, interface graphique et logique métier.</li>
+                        <li>Modélisation de l'architecture logicielle en UML et gestion des scores.</li>
+                    </ul>
+                </article>
+
+                <article class="entree">
+                    <h3>F.I.C.S. Ingénierie <span class="lieu">co-fondateur</span></h3>
+                    <p class="periode">Recherche et conception</p>
+                    <ul>
+                        <li>Initiative entrepreneuriale autour des technologies pour l'industrie de l'immersion, restée au stade de la conception théorique.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="bloc" aria-labelledby="formation">
+                <h2 id="formation" class="invite"><span class="utilisateur">pierre@cv</span>:<span class="chemin">~</span>$ cat formation.txt</h2>
+                <ul class="simple">
+                    <li><span class="annee">2026</span> BTS CIEL – Campus Saint Jean Baptiste de LaSalle, Avignon</li>
+                    <li><span class="annee">2023</span> Bac STI2D – Lycée Saint Jean Baptiste de LaSalle, Avignon</li>
+                </ul>
+            </section>
+
+            <section class="bloc" aria-labelledby="contact">
+                <h2 id="contact" class="invite"><span class="utilisateur">pierre@cv</span>:<span class="chemin">~</span>$ cat contact.txt</h2>
+                <dl class="details">
+                    <dt>email</dt>
+                    <dd><a href="mailto:pierre.curty.pro@gmail.com">pierre.curty.pro@gmail.com</a> <button type="button" class="bouton-copier" data-copie="pierre.curty.pro@gmail.com" aria-live="polite" hidden>[copier]</button></dd>
+                    <dt>github</dt>
+                    <dd><a href="https://github.com/pcurty" target="_blank" rel="noopener">github.com/pcurty</a></dd>
+                    <dt>cv</dt>
+                    <dd><a href="CV-Curty-Pierre.pdf" download>CV-Curty-Pierre.pdf</a></dd>
+                    <dt>mobilité</dt>
+                    <dd>Permis B · Lyon et périphérie</dd>
+                </dl>
+                <p class="invite fin"><span class="utilisateur">pierre@cv</span>:<span class="chemin">~</span>$ <span class="curseur" aria-hidden="true"></span></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

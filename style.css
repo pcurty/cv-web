@@ -1,0 +1,290 @@
+:root {
+    --fond-page: #0f1419;
+    --fond-terminal: #161b22;
+    --fond-barre: #1f2630;
+    --texte: #d5dbe3;
+    --discret: #8b96a5;
+    --accent: #7fc99a;
+    --chemin: #6fa8dc;
+    --bordure: #2a323d;
+    --police: "JetBrains Mono", "Fira Code", "Cascadia Code", Consolas, "Courier New", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    background: var(--fond-page);
+    color: var(--texte);
+    font-family: var(--police);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.terminal {
+    max-width: 52rem;
+    margin: 0 auto;
+    background: var(--fond-terminal);
+    border: 1px solid var(--bordure);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.barre-titre {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    background: var(--fond-barre);
+    border-bottom: 1px solid var(--bordure);
+}
+
+.point {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: var(--bordure);
+}
+
+.barre-titre-texte {
+    margin-left: 0.75rem;
+    color: var(--discret);
+    font-size: 0.8rem;
+}
+
+.ecran {
+    padding: 2rem 2rem 2.5rem;
+}
+
+.bloc {
+    margin-bottom: 2.5rem;
+}
+
+.bloc:last-child {
+    margin-bottom: 0;
+}
+
+.invite {
+    margin: 0 0 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--texte);
+}
+
+.utilisateur {
+    color: var(--accent);
+}
+
+.chemin {
+    color: var(--chemin);
+}
+
+h1 {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.poste {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+.statut {
+    margin: 0.75rem 0 0;
+    color: var(--discret);
+}
+
+p {
+    margin: 0 0 0.9rem;
+    max-width: 70ch;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 0.4rem 1rem;
+    margin: 0;
+}
+
+.details dt {
+    color: var(--discret);
+}
+
+.details dd {
+    margin: 0;
+}
+
+.entree {
+    margin: 0 0 1.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--bordure);
+}
+
+.entree:last-child {
+    margin-bottom: 0;
+}
+
+.entree h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.lieu {
+    display: block;
+    font-weight: 400;
+    color: var(--accent);
+}
+
+.periode {
+    margin: 0.25rem 0 0.5rem;
+    font-size: 0.85rem;
+    color: var(--discret);
+}
+
+ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.3rem;
+    max-width: 70ch;
+}
+
+li::marker {
+    color: var(--accent);
+}
+
+.simple {
+    list-style: none;
+    padding: 0;
+}
+
+.annee {
+    display: inline-block;
+    min-width: 3.5rem;
+    color: var(--accent);
+}
+
+a {
+    color: var(--chemin);
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.curseur {
+    display: inline-block;
+    width: 0.6rem;
+    height: 1.1rem;
+    background: var(--accent);
+    vertical-align: text-bottom;
+    animation: clignoter 1.1s steps(1) infinite;
+}
+
+.telechargement {
+    margin-top: 0.5rem;
+}
+
+.bouton-copier {
+    margin-left: 0.5rem;
+    padding: 0 0.4rem;
+    border: 1px solid var(--bordure);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--chemin);
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.bouton-copier:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.bouton-copier:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.js .apparition {
+    opacity: 0;
+}
+
+.js .apparition.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.fin {
+    margin-top: 2rem;
+}
+
+@keyframes clignoter {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
+    .terminal {
+        border: 0;
+        border-radius: 0;
+    }
+
+    .ecran {
+        padding: 1.5rem 1.25rem 2rem;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .details dd {
+        margin-bottom: 0.6rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .curseur {
+        animation: none;
+    }
+
+    .js .apparition.visible {
+        transition: none;
+    }
+}
