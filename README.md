@@ -17,3 +17,4 @@ Mon profil en résumé :
 - Relocalisation prévue d'ici la mi-novembre
 - Stack : Python, C++, notions en Rust
 
+https://pcurty.github.io/cv-web/
