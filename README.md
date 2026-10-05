@@ -17,4 +17,3 @@ Mon profil en résumé :
 - Relocalisation prévue d'ici la mi-novembre
 - Stack : Python, C++, notions en Rust
 
-Lien pour consulter le CV : [Lien vers ton GitHub Pages]
